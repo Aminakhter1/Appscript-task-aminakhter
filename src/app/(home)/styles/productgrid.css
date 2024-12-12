@@ -1,0 +1,110 @@
+.product-page {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .filter-body{
+    padding:10px;
+    
+  }
+  
+  .toggle-sidebar-button {
+    
+    padding: 10px 20px;
+    
+    color:black;
+    border: none;
+    
+    cursor: pointer;
+    display: left;
+    background-color: white;
+  }
+  
+  
+  
+  .sidebar {
+    width: 300px;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sidebar h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h3 {
+    font-size: 18px;
+  }
+  
+  .filter-section select, .filter-section input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .product-list {
+    flex-grow: 1;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr); /* Four products per row */
+  }
+  
+  .product-list.full-width {
+    width: 100%;
+  }
+  
+  .product-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .product-item h3 {
+    margin: 0;
+  }
+  
+  .product-item p {
+    margin: 5px 0;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  #cars{
+    float: right;
+    margin-right:5%;
+    margin-top:10px;
+    border:0px;
+  
+    
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr); /* Two products per row on tablets and smaller devices */
+    }
+  
+    .sidebar {
+      width: 200px; /* Adjust sidebar width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr); /* Ensure two products per row on mobile phones */
+    }
+  
+    .sidebar {
+      width: 100%; /* Sidebar can take full width if necessary */
+    }
+  }
+  
